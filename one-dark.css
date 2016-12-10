@@ -34,30 +34,41 @@
 
 .cm-s-one-dark .CodeMirror .CodeMirror-gutters, .cm-s-one-dark .CodeMirror-gutter {
   white-space: nowrap;
-  border-right: 1px solid rgba(204, 217, 255,0.05);
+  border: none;
   background: transparent;
 }
 .cm-s-one-dark .CodeMirror-linenumber {
-  padding: 0 30px 0 30px;
+  padding: 0 0 0 30px;
   min-width: 20px;
   text-align: right;
   white-space: nowrap;
   color: hsl(220, 10%, 25%);
 }
-/* ...folding */
-.cm-s-one-dark .CodeMirror-foldgutter-open:after {
-  color: hsl(220, 10%, 25%);
+/* ...folding addon: fold/...  */
+.cm-s-one-dark .CodeMirror-foldmarker {
+  font-family: 'Consolas';
+  line-height: .3;
+  cursor: pointer;
+  color: hsl(220, 14%, 71%);
+  background: rgba(204, 217, 255,0.05);
 }
-.cm-s-one-dark .CodeMirror-foldgutter-folded:after {
-  color: hsl(220, 10%, 40%);
+.cm-s-one-dark .CodeMirror-foldgutter {
+  width: 30px;
+  border-right: 1px solid rgba(204, 217, 255,0.05);
+}
+.cm-s-one-dark .CodeMirror-foldgutter-open, .cm-s-one-dark .CodeMirror-foldgutter-folded {
+  cursor: pointer;
+}
+.cm-s-one-dark .CodeMirror-foldgutter-open:after {
+  content: "\25BE";
+  color: hsl(220, 10%, 25%);
 }
 .cm-s-one-dark .CodeMirror.over-gutter, .cm-s-one-dark .CodeMirror-activeline .CodeMirror-foldgutter-open:after {
   color: hsl(220, 10%, 40%);
 }
-.cm-s-one-dark .CodeMirror-foldmarker {
-  border-color: hsl(220, 10%, 25%);
-  color: hsl(220, 14%, 71%);
-  background: rgba(204, 217, 255,0.05);
+.cm-s-one-dark .CodeMirror-foldgutter-folded:after {
+  content: "\25B8";
+  color: hsl(220, 10%, 40%);
 }
 /* ...misc */
 .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
