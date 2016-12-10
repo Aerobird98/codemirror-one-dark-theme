@@ -3,7 +3,6 @@
     Author:     Török Ádám (http://github.com/Aerobird98)
 
     Original Atom One Dark Theme (https://github.com/atom/one-dark-syntax)
-    Released under the MIT license (https://github.com/Aerobird98/codemirror-one-dark-theme/blob/master/LICENSE)
 */
 
 /* Basic Theme */
@@ -94,6 +93,8 @@
 }
 
 /* Syntax Theme */
+
+/* markdown */
 .cm-s-one-dark .cm-header {color: #e06c75;}
 .cm-s-one-dark .cm-quote {color: #5c6370;font-style: italic;}
 .cm-s-one-dark .cm-negative {color: #e06c75;}
@@ -104,10 +105,10 @@
 .cm-s-one-dark .cm-header .cm-em {color: #c678dd;font-style: italic;}
 
 .cm-s-one-dark .cm-keyword {color: #c678dd;}
-.cm-s-one-dark .cm-atom {color: #d19a66;}
+.cm-s-one-dark .cm-atom {color: #d19a66;} /* #d19a66 */
 .cm-s-one-dark .cm-number {color: #d19a66;}
 .cm-s-one-dark .cm-def {color: #e5c07b;}
-.cm-s-one-dark .cm-property {color: #61afef;}
+.cm-s-one-dark .cm-property {color: #61afef;} /* #61afef */
 .cm-s-one-dark .cm-punctuation {color: #abb2bf;}
 .cm-s-one-dark .cm-operator {color: #abb2bf;}
 
@@ -118,9 +119,11 @@
 .cm-s-one-dark .cm-comment {color: #5c6370;font-style: italic;}
 .cm-s-one-dark .cm-string {color: #98c379;}
 .cm-s-one-dark .cm-meta,
-.cm-s-one-dark .cm-qualifier {color: #abb2bf;}
+.cm-s-one-dark .cm-qualifier {color: #d19a66;}
 .cm-s-one-dark .cm-builtin {color: #e06c75;}
 .cm-s-one-dark .cm-bracket {color: #abb2bf;}
+
+/* xml, html, ... */
 .cm-s-one-dark .cm-tag {color: #e06c75;}
-.cm-s-one-dark .cm-attribute {color: #61afef;}
+.cm-s-one-dark .cm-attribute {color: #d19a66;} /* #61afef */
 .cm-s-one-dark .cm-link {color: #98c379;border-bottom: solid 1px #98c379;}
