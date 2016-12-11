@@ -38,7 +38,7 @@
   background: transparent;
 }
 .cm-s-one-dark .CodeMirror-linenumber {
-  padding: 0 0 0 30px;
+  padding: 0 30px 0 30px;
   min-width: 20px;
   text-align: right;
   white-space: nowrap;
@@ -53,8 +53,8 @@
   background: rgba(204, 217, 255,0.05);
 }
 .cm-s-one-dark .CodeMirror-foldgutter {
-  width: 30px;
-  border-right: 1px solid rgba(204, 217, 255,0.05);
+  width: 15px;
+  border: none;
 }
 .cm-s-one-dark .CodeMirror-foldgutter-open, .cm-s-one-dark .CodeMirror-foldgutter-folded {
   cursor: pointer;
@@ -74,9 +74,6 @@
 .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
   background-color: #ccc; /* The little square between H and V scrollbars */
 }
-.cm-s-one-dark .inline-widget .CodeMirror-gutter-elt {
-  color: red;
-}
 
 /* Cursor */
 
@@ -90,35 +87,12 @@
 
 /* Popular addons */
 
-/* addon: search/... */
-.cm-s-one-dark .CodeMirror-searching .searching-current-match {
-  color: #fff !important;
-  border:1px solid hsl(220, 100%, 66%);
-  margin:0 -1px;
-  background-color: rgba(204, 217, 255,0.09);
-  box-shadow: 0px 0px 6px rgba(66, 133, 244,0.4);
-}
 /* addon: adit/machingbrackets.js & addon: edit/matchtags.js   */
 .cm-s-one-dark .CodeMirror-matchingbracket, .cm-s-one-dark .CodeMirror-matchingtag {
   /* Ensure visibility against gray inline editor background */
   background-color: rgba(204, 217, 255,0.09);
   color: hsl(220, 14%, 71%) !important;
   border-bottom: 1px solid hsl(220, 100%, 66%);
-}
-/* addon: selection/active-line.js */
-.cm-s-one-dark .CodeMirror .CodeMirror-activeline-background {
-  background: transparent;
-}
-.cm-s-one-dark .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
-  background: transparent;
-  color: hsl(220, 10%, 40%);
-}
-.cm-s-one-dark .CodeMirror-focused .CodeMirror-activeline-background {
-  background: rgba(204, 217, 255,0.05);
-}
-.cm-s-one-dark .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-  background: transparent;
-  color: hsl(220, 10%, 40%);
 }
 
 
@@ -140,13 +114,13 @@
 
 /* xml, html, ... */
 .cm-s-one-dark .cm-tag {color: #e06c75;}
-.cm-s-one-dark .cm-attribute {color: #d19a66;} /* #61afef */
+.cm-s-one-dark .cm-attribute {color: #d19a66;}
 .cm-s-one-dark .cm-link {color: #98c379;border-bottom: solid 1px #98c379;}
 
 /* other ... (for example javascript) */
 .cm-s-one-dark .cm-builtin {color: #e06c75;}
 .cm-s-one-dark .cm-keyword {color: #c678dd;}
-.cm-s-one-dark .cm-def {color: #e5c07b;}
+.cm-s-one-dark .cm-def {color: #e5c07b;} /* original:  #d19a66; */
 
 .cm-s-one-dark .cm-atom {color: #d19a66;}
 .cm-s-one-dark .cm-number {color: #d19a66;}
