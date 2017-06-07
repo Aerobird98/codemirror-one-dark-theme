@@ -10,7 +10,7 @@
 
 
 .cm-s-one-dark .CodeMirror, .cm-s-one-dark .CodeMirror-scroll {
-  font-family: 'consolas';
+  font-family: 'Inconsolata, Monaco, Consolas, 'Courier New', Courier';
   font-weight: 300;
   font-size: 18px;
 
@@ -46,7 +46,6 @@
 }
 /* ...folding addon: fold/...  */
 .cm-s-one-dark .CodeMirror-foldmarker {
-  font-family: 'Consolas';
   line-height: .3;
   cursor: pointer;
   color: hsl(220, 14%, 71%);
