@@ -1,8 +1,7 @@
 /*
     Name:       one-dark
     Author:     Török Ádám (http://github.com/Aerobird98)
-
-    Original Atom One Dark Theme (https://github.com/atom/one-dark-syntax & https://github.com/atom/one-dark-ui)
+    Original Atom One Dark Theme (https://github.com/atom/one-dark-ui & https://github.com/atom/one-dark-syntax)
 */
 
 
@@ -10,10 +9,10 @@
 
 
 .cm-s-one-dark .CodeMirror, .cm-s-one-dark .CodeMirror-scroll {
-  font-family: 'Inconsolata, Monaco, Consolas, 'Courier New', Courier';
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
   font-weight: 300;
   font-size: 18px;
-
+  line-height: 1.30;
   background-color: hsl(220, 13%, 18%);
   color: hsl(220, 14%, 71%);
 }
@@ -30,22 +29,54 @@
   padding: 0 4px; /* Horizontal padding of content */
 }
 
-/* Gutter & Folding */
-
+/* Gutters */
 .cm-s-one-dark .CodeMirror .CodeMirror-gutters, .cm-s-one-dark .CodeMirror-gutter {
   white-space: nowrap;
   border: none;
   background: transparent;
 }
+.CodeMirror-gutters {
+   border-right: none;
+   background-color: transparent;
+}
 .cm-s-one-dark .CodeMirror-linenumber {
-  padding: 0 30px 0 30px;
+  padding: 0 13px 0 0;
   min-width: 20px;
   text-align: right;
   white-space: nowrap;
   color: hsl(220, 10%, 25%);
 }
-/* ...folding addon: fold/...  */
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: #ccc; /* The little square between H and V scrollbars */
+}
+
+/* Active Line */
+.cm-s-one-dark .CodeMirror-activeline-background {
+  background-color: #2C323C;
+}
+
+/* Cursor */
+.cm-s-one-dark .CodeMirror-cursor {
+  border-left: 2px solid hsl(220, 100%, 66%) !important;
+}
+.cm-s-one-dark .CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid #fff;
+}
+
+/* Popular addons */
+
+/* addon: edit/machingbrackets.js & addon: edit/matchtags.js */
+.cm-s-one-dark .CodeMirror-matchingbracket, .cm-s-one-dark .CodeMirror-matchingtag {
+  /*ensure visibility against gray inline editor background */
+  background-color: transparent;
+  color: hsl(220, 14%, 71%) !important;
+  border-bottom: 1px solid hsl(220, 100%, 66%);
+}
+
+/* addon: fold/foldgutter.js & fold/brace-fold.js & fold/foldcode.js   */
 .cm-s-one-dark .CodeMirror-foldmarker {
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
   line-height: .3;
   cursor: pointer;
   color: hsl(220, 14%, 71%);
@@ -69,31 +100,6 @@
   content: "\25B8";
   color: hsl(220, 10%, 40%);
 }
-/* ...misc */
-.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
-  background-color: #ccc; /* The little square between H and V scrollbars */
-}
-
-/* Cursor */
-
-.cm-s-one-dark .CodeMirror-cursor {
-  border-left: 2px solid hsl(220, 100%, 66%) !important;
-}
-.cm-s-one-dark .CodeMirror-overwrite .CodeMirror-cursor {
-  border-left: none !important;
-  border-bottom: 1px solid #fff;
-}
-
-/* Popular addons */
-
-/* addon: adit/machingbrackets.js & addon: edit/matchtags.js   */
-.cm-s-one-dark .CodeMirror-matchingbracket, .cm-s-one-dark .CodeMirror-matchingtag {
-  /* Ensure visibility against gray inline editor background */
-  background-color: rgba(204, 217, 255,0.09);
-  color: hsl(220, 14%, 71%) !important;
-  border-bottom: 1px solid hsl(220, 100%, 66%);
-}
-
 
 /* Syntax Theme /---------------------------------------------------------------------------------- */
 
