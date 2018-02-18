@@ -1,6 +1,6 @@
 {
   "name": "codemirror-one-dark-theme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "atom's one-dark theme for codemirror.",
   "main": "one-dark.css",
   "scripts": {
