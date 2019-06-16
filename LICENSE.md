@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2016-2017 Aerobird98
+Copyright (c) 2016-2017 Török Ádám <https://github.com/Aerobird98>
+Copyright (c) 2019 Robert Zack Jaidyn Norris-Karr <rzjnzk@gmail.com> <https://github.com/rzjnzk>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

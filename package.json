@@ -1,24 +1,32 @@
 {
-  "name": "codemirror-one-dark-theme",
-  "version": "1.1.1",
-  "description": "atom's one-dark theme for codemirror.",
-  "main": "one-dark.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aerobird98/codemirror-one-dark-theme.git"
-  },
-  "keywords": [
-    "codemirror",
-    "theme",
-    "one-dark"
-  ],
-  "author": "Aerobird98 (Adam Török)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aerobird98/codemirror-one-dark-theme/issues"
-  },
-  "homepage": "https://github.com/aerobird98/codemirror-one-dark-theme#readme"
+    "name": "codemirror-one-dark-theme",
+    "description": "Atom Editor's `One Dark` theme for CodeMirror.",
+    "version": "1.1.2",
+    "author": "Aerobird98 (Adam Török)",
+    "contributors": 
+    [
+        "Robert Zack Jaidyn Norris-Karr <rzjnzk@gmail.com> (https://github.com/rzjnzk)"
+    ],
+    "license": "MIT",
+    "repository": 
+    {
+        "type": "git",
+        "url": "git+https://github.com/aerobird98/codemirror-one-dark-theme.git"
+    },
+    "homepage": "https://github.com/aerobird98/codemirror-one-dark-theme#readme",
+    "keywords": 
+    [
+        "codemirror",
+        "editor",
+        "theme",
+        "syntax",
+        "atom",
+        "one dark",
+        "atom one dark"
+    ],
+    "bugs": 
+    {
+        "url": "https://github.com/aerobird98/codemirror-one-dark-theme/issues"
+    },
+    "main": "./src/codemirror-one-dark-theme.css"
 }
