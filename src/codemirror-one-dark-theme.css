@@ -1,0 +1,158 @@
+/**
+ * @name `codemirror-one-dark-theme`
+ * @description Atom Editor's `One Dark` theme for CodeMirror.
+ * @version 1.1.2
+ * @author Copyright (c) 2016-2017 Török Ádám <https://github.com/Aerobird98>
+ * @author Copyright (c) 2019 Robert Zack Jaidyn Norris-Karr <https://github.com/rzjnzk>
+ * @repository <https://github.com/Aerobird98/codemirror-one-dark-theme>
+ * @license MIT
+ * @aknowlege <https://github.com/atom/one-dark-ui> 
+ * @aknowlege <https://github.com/atom/one-dark-syntax>
+ */
+
+.cm-s-one-dark 
+{
+    font-family: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    font-weight: 350;
+    color: #abb2bf;
+}
+
+.cm-s-one-dark .CodeMirror-lines,
+.cm-s-one-dark .cm-m-css.cm-property,
+.cm-s-one-dark .cm-punctuation,
+.cm-s-one-dark .cm-meta,
+.cm-s-one-dark .cm-bracket 
+{
+    color: #abb2bf !important;
+    background-color: transparent;
+}
+
+/* Add-on: `edit/machingbrackets.js`. */
+.cm-s-one-dark .CodeMirror-matchingbracket,
+/* Add-on: `edit/matchtags.js`. */
+.cm-s-one-dark .CodeMirror-matchingtag 
+{
+    border-bottom: 2px solid #56b6c2;
+    color: #abb2bf !important;
+    background-color: transparent;
+}
+
+.cm-s-one-dark .CodeMirror-nonmatchingbracket 
+{
+    border-bottom: 2px solid #e06c75;
+    color: #abb2bf !important;
+    background-color: transparent;
+}
+
+.cm-s-one-dark .cm-error,
+.cm-s-one-dark .cm-negative,
+.cm-s-one-dark .cm-heade,
+.cm-s-one-dark .cm-tag,
+.cm-s-one-dark .cm-builtin,
+.cm-s-one-dark .cm-variable,
+.cm-s-one-dark .cm-positive 
+{
+    color: #e06c75;
+}
+
+.cm-s-one-dark .cm-property,
+.cm-s-one-dark .cm-operator,
+.cm-s-one-dark .cm-m-css.cm-atom,
+.cm-s-one-dark .cm-m-lua.cm-variable,
+.cm-s-one-dark .cm-m-css.cm-builtin 
+{
+    color: #56b6c2;
+}
+
+.cm-s-one-dark .CodeMirror-cursor 
+{
+    border-left: 2px solid #56b6c2 !important;
+}
+
+.cm-s-one-dark,
+.cm-s-one-dark .CodeMirror-gutter,
+.cm-s-one-dark .CodeMirror-gutters 
+{
+    border: none;
+    background-color: #282c34;
+}
+
+.cm-s-one-dark .CodeMirror-selected 
+{
+    background-color: #3e4451;
+}
+
+.cm-s-one-dark .CodeMirror-linenumber,
+.cm-s-one-dark .CodeMirror-linenumbers,
+/* Add-on: `fold/foldgutter.js`. */
+.cm-s-one-dark .CodeMirror-foldmarker,
+.cm-s-one-dark .CodeMirror-foldgutter,
+.cm-s-one-dark .CodeMirror-foldgutter-open,
+.cm-s-one-dark .CodeMirror-foldgutter-folded 
+{
+    border: none;
+    text-shadow: none;
+    color: #5c6370 !important;
+    background-color: transparent;
+}
+
+.cm-s-one-dark .cm-comment,
+.cm-s-one-dark .cm-quote 
+{
+    color: #5c6370;
+    font-style: italic;
+}
+
+/* Add-on: `selection/active-line.js`. */
+.cm-s-one-dark .CodeMirror-activeline-background 
+{
+    background-color: rgba(153, 187, 255, 0.04);
+}
+
+.cm-s-one-dark .cm-em,
+.cm-s-one-dark .cm-header .cm-em 
+{
+    color: #c678dd;
+    font-style: italic;
+}
+
+.cm-s-one-dark .cm-keyword 
+{
+    color: #c678dd;
+}
+
+.cm-s-one-dark .cm-strong,
+.cm-s-one-dark .cm-header .cm-strong 
+{
+    color: #d19a66;
+    font-weight: bold;
+}
+
+.cm-s-one-dark .cm-attribute,
+.cm-s-one-dark .cm-qualifier,
+.cm-s-one-dark .cm-number,
+.cm-s-one-dark .cm-atom 
+{
+    color: #d19a66;
+}
+
+.cm-s-one-dark .cm-string 
+{
+    color: #98c379;
+}
+
+.cm-s-one-dark .cm-link 
+{
+    color: #98c379;
+    border-bottom: solid 1px #98c379;
+}
+
+.cm-s-one-dark .cm-def 
+{
+    color: #e5c07b;
+}
+
+.cm-s-one-dark .cm-m-css.cm-variable 
+{
+    color: #828997;
+}
