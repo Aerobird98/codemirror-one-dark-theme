@@ -1,0 +1,100 @@
+/*
+    Name:       one-light 1.0.0
+    Author:     Yohan de Rose (https://github.com/yohanderose/)
+				-> originally Török Ádám (http://github.com/Aerobird98)
+    Original Atom One Dark Theme (https://github.com/atom/one-dark-ui & https://github.com/atom/one-dark-syntax)
+*/
+
+/* basic */
+.cm-s-one-light {
+  font-family: JetBrains Mono, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-weight: 350;
+  font-size: 18px;
+  color: #383a42;
+  background-color: #fafafa;
+}
+
+.cm-s-one-light .CodeMirror-selected {background-color: #d0d1d5;}
+.cm-s-one-light .CodeMirror-gutter,
+.cm-s-one-light .CodeMirror-gutters {
+  border: none;
+  background-color: #fafafa;
+}
+
+.cm-s-one-light .CodeMirror-linenumber,
+.cm-s-one-light .CodeMirror-linenumbers {
+  color: #9a9b9f !important;
+  background-color: transparent;
+}
+
+.cm-s-one-light .CodeMirror-lines {
+  color: #383a42 !important;
+  background-color: transparent;
+}
+
+.cm-s-one-light .CodeMirror-cursor {border-left: 2px solid #0184bb !important;}
+
+/* addon: edit/machingbrackets.js & addon: edit/matchtags.js */
+.cm-s-one-light .CodeMirror-matchingbracket,
+.cm-s-one-light .CodeMirror-matchingtag {
+  border-bottom: 2px solid #0184bb;
+  color: #383a42 !important;
+  background-color: transparent;
+}
+
+.cm-s-one-light .CodeMirror-nonmatchingbracket {
+  border-bottom: 2px solid #e45649;
+  color: #383a42 !important;
+  background-color: transparent;
+}
+
+/* addon: fold/foldgutter.js */
+.cm-s-one-light .CodeMirror-foldmarker,
+.cm-s-one-light .CodeMirror-foldgutter,
+.cm-s-one-light .CodeMirror-foldgutter-open,
+.cm-s-one-light .CodeMirror-foldgutter-folded {
+  border: none;
+  text-shadow: none;
+  color: #9a9b9f !important;
+  background-color: transparent;
+}
+
+/* addon: selection/active-line.js */
+.cm-s-one-light .CodeMirror-activeline-background {background-color: rgba(0, 123, 255, 0.04);}
+
+/* basic syntax */
+.cm-s-one-light .cm-header {color: #e45649;}
+.cm-s-one-light .cm-quote {color: #9a9b9f;font-style: italic;}
+.cm-s-one-light .cm-negative {color: #e45649;}
+.cm-s-one-light .cm-positive {color: #50a14f;}
+.cm-s-one-light .cm-strong {color: #c18401;font-weight: bold;}
+.cm-s-one-light .cm-header .cm-strong {color: #c18401;font-weight: bold;}
+.cm-s-one-light .cm-em {color: #986801;font-style: italic;}
+.cm-s-one-light .cm-header .cm-em {color: #986801;font-style: italic;}
+.cm-s-one-light .cm-tag {color: #e45649;}
+.cm-s-one-light .cm-attribute {color: #c18401;}
+.cm-s-one-light .cm-link {color: #0184bb;border-bottom: solid 1px #0184bb;}
+.cm-s-one-light .cm-builtin {color: #0184bb;}
+.cm-s-one-light .cm-keyword {color: #a626a4;}
+.cm-s-one-light .cm-def {color: #4078f2;}
+.cm-s-one-light .cm-atom {color: #986801;}
+.cm-s-one-light .cm-number {color: #986801;}
+.cm-s-one-light .cm-property {color: #0184bb;}
+.cm-s-one-light .cm-qualifier {color: #c18401;}
+.cm-s-one-light .cm-variable {color: #e45649;}
+.cm-s-one-light .cm-string {color: #50a14f;}
+.cm-s-one-light .cm-punctuation {color: #383a42;}
+.cm-s-one-light .cm-operator {color: #0184bb;}
+.cm-s-one-light .cm-meta {color: #383a42;}
+.cm-s-one-light .cm-bracket {color: #383a42;}
+.cm-s-one-light .cm-comment {color: #a0a1a7;font-style: italic;}
+.cm-s-one-light .cm-error {color: #e45649;}
+
+/* css syntax corrections */
+.cm-s-one-light .cm-m-css.cm-variable {color: #383a42;}
+.cm-s-one-light .cm-m-css.cm-property {color: #383a42;}
+.cm-s-one-light .cm-m-css.cm-atom {color: #0184bb;}
+.cm-s-one-light .cm-m-css.cm-builtin {color: #0184bb;}
+
+/* lua syntax corrections */
+.cm-s-one-light .cm-m-lua.cm-variable {color: #0184bb;}
